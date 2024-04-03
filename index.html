@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードの指定 UTF-8を指定します -->
+    <meta charset="UTF-8" />
+    <!-- レスポンシブ表示のための記述 -->
+    <!-- <meta name="viewport" content="width=1280" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 検索にヒットしないようにするための記述 -->
+    <meta name="robots" content="noindex" />
+    <!-- サイトのタイトルを記述 -->
+    <title>Sobolon</title>
+    <!-- サイトの概要を記述 -->
+    <meta name="description" content="" />
+    <!-- Google Fontsを読み込みための記述 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;600&display=swap" rel="stylesheet" />
+    <!-- スタイルシートの読み込みのための記述 -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- javasqriptの読み込みのための記述 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+    <!-- OGP -->
+    <meta property="og:type" content="website" />
+    <!-- TOPページ以外はarticle -->
+    <meta property="og:title" content="Sobolon" />
+    <meta property="og:site_name" content="Sobolon" />
+    <meta property="og:url" content="sobolon" />
+    <meta property="og:image" content="https://serika-log.pya.jp/sobolon/assets/img/ogp.jpg" />
+    <meta
+      property="og:description"
+      content="“可愛い” で地球を守る！海洋マイクロプラスチックを素材としたハンドメイドアクセサリー「sobolon」"
+    />
+  </head>
+  <body>
+    <div class="u-fadein">
+      <img src="./assets/img/logo.svg" alt="Sobolon" width="120" height="22" />
+    </div>
+    <header class="l-header">
+      <div class="l-header__inner l-inner">
+        <h1 class="l-header__logo">
+          <a href="#"><img src="./assets/img/logo.svg" alt="Sobolon" width="120" height="22" /></a>
+        </h1>
+        <button id="js-drawer-icon" class="p-drawer-icon u-hidden-pc" aria-label="メニューボタン">
+          <span class="p-drawer-icon__bar"></span>
+          <span class="p-drawer-icon__bar"></span>
+          <span class="p-drawer-icon__bar"></span>
+        </button>
+        <nav id="js-drawer-content" class="l-header__nav">
+          <ul class="l-header__lists">
+            <li class="l-header__list"><a href="#concept" class="l-header__list-item">Concept</a></li>
+            <li class="l-header__list"><a href="#feature" class="l-header__list-item">Feature</a></li>
+            <li class="l-header__list"><a href="#products" class="l-header__list-item">Products</a></li>
+            <li class="l-header__list"><a href="#news" class="l-header__list-item">News</a></li>
+            <li class="l-header__list"><a href="#contact" class="l-header__list-item">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- mv -->
+      <div class="p-mv">
+        <div class="p-mv__inner l-inner">
+          <picture class="p-mv__img">
+            <source media="(min-width: 768px)" srcset="./assets/img/mv.jpg" width="990" height="660" />
+            <img
+              src="./assets/img/sp/mv.jpg"
+              alt="アクセサリーパーツを頬や額に乗せて寝転ぶ女性"
+              decoding="async"
+              width="690"
+              height="828"
+            />
+          </picture>
+          <div class="p-mv__message">
+            <p class="mv__title">
+              “可愛い” で<br class="u-hidden-sp" />
+              地球を守る！
+            </p>
+            <p class="mv__text">
+              海洋マイクロプラスチックを素材とした<br />
+              ハンドメイドアクセサリー「sobolon」
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- concept -->
+      <section id="concept" class="p-concept">
+        <div class="p-concept__inner l-inner">
+          <h2 class="p-concept__heading c-cection-heading">Concept</h2>
+          <div class="p-concept__contents c-section-contents">
+            <div class="p-concept__img">
+              <img src="./assets/img/concept.jpg" alt="平原に立つ女性が両腕を上げています" width="690" height="460" />
+            </div>
+            <div class="p-concept__message">
+              <p class="p-concept__message-title">
+                可愛くてステキなのは当たり前。 <br />
+                地球にやさしくあるのも当たり前。
+              </p>
+              <p class="p-concept__message-text">
+                「sobolon」は、海洋汚染の要因であるマイクロプラスチックを回収し、それらを素材としたハンドメイドアクセサリーを製作しているブランドです。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- feature -->
+      <section id="feature" class="p-feature">
+        <div class="p-feature__inner l-inner">
+          <h2 class="p-feature__heading c-cection-heading">Feature</h2>
+          <div class="p-feature__cards c-section-contents">
+            <div class="p-feature-card">
+              <div class="p-feature-card__img">
+                <img src="./assets/img/feature_1.jpg" alt="丸いパーツの付いたピアス" width="340" height="346" />
+              </div>
+              <p class="p-feature-card__text">
+                素材は海で採れた<br />
+                マイクロプラスチック
+              </p>
+            </div>
+            <div class="p-feature-card">
+              <div class="p-feature-card__img">
+                <img src="./assets/img/feature_2.jpg" alt="カラフルなプラスチックの破片" width="340" height="346" />
+              </div>
+              <p class="p-feature-card__text">
+                個性あふれる<br />
+                “可愛い”デザイン
+              </p>
+            </div>
+            <div class="p-feature-card">
+              <div class="p-feature-card__img">
+                <img src="./assets/img/feature_3.jpg" alt="三角形や四角形のカラフルなピアス" width="340" height="346" />
+              </div>
+              <p class="p-feature-card__text">
+                世界にひとつだけの<br />
+                一点物アクセサリー
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <div class="p-about">
+        <div class="p-about__inner l-inner">
+          <div class="p-about__contents">
+            <p class="p-about__contents-lead">
+              消費者である私たちが、<br />
+              地球環境のためにできることは何か？
+            </p>
+            <p class="p-about__contents-text">
+              そんな視点からこのブランドは生まれました。<br />
+              オシャレを楽しむ気持ちを大切にしながらも、<br />
+              ただ可愛いだけじゃない環境にやさしいアクセサリーを選ぶ人が増えていったら…<br />
+              その変化は少しずつ、だけども本質的に、<br class="u-hidden-pc" />
+              この世界をHappyに変えていくのだと、私たちは考えます。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- products -->
+      <section id="products" class="p-products">
+        <div class="p-products__inner l-inner">
+          <h2 class="p-products__heading c-cection-heading">Products</h2>
+          <div class="p-products__cards c-section-contents">
+            <a class="p-products-card">
+              <div class="p-products-card__img">
+                <img src="./assets/img/products_1.jpg" alt="三角形や円形のカラフルなピアス" width="263" height="263" />
+              </div>
+              <div class="p-products-card__body">
+                <p class="p-products-card__title">
+                  【しかくイヤリング】海洋マイクロプラスチックを使ったハンドメイドイヤリング(全7色)
+                </p>
+                <p class="p-products-card__price">￥3,695</p>
+              </div>
+            </a>
+            <a class="p-products-card">
+              <div class="p-products-card__img">
+                <img src="./assets/img/products_2.jpg" alt="三角形や四角形のパーツが付いたリング" width="263" height="263" />
+              </div>
+              <div class="p-products-card__body">
+                <p class="p-products-card__title">
+                  【しかく指輪】海洋マイクロプラスチックを使ったハンドメイドアクセサリー/ゆびわ(全7色)
+                </p>
+                <p class="p-products-card__price">￥2,390</p>
+              </div>
+            </a>
+            <a class="p-products-card">
+              <div class="p-products-card__img">
+                <img src="./assets/img/products_3.jpg" alt="四角形のイヤリング" width="263" height="263" />
+              </div>
+              <div class="p-products-card__body">
+                <p class="p-products-card__title">
+                  【ピンバッジ】海洋マイクロプラスチックを使ったsobolonオリジナルピンバッジ(全6色)
+                </p>
+                <p class="p-products-card__price">￥2,580</p>
+              </div>
+            </a>
+          </div>
+          <div class="p-products__button">
+            <a href="" class="c-button">MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section id="news" class="p-news">
+        <div class="p-news__inner l-inner">
+          <h2 class="p-news__heading c-cection-heading">News</h2>
+          <div class="p-news__cards c-section-contents">
+            <article class="p-news__card">
+              <a href="" class="p-news-card">
+                <div class="p-news-card__img">
+                  <img src="./assets/img/news_1.jpg" alt="ゴールドのパーツを沢山あしらったピアス" width="520" height="320" />
+                </div>
+                <div class="p-news-card__body">
+                  <time datetime="2020-02-04">2020年2月4日</time>
+                  <h3 class="p-news-card__title">き業展終了！次回は2/11(火)フェスタ出店します。</h3>
+                  <p class="p-news-card__text">
+                    「き業展」2日目！大盛況に終わりました\(
+                    ˆoˆ)/来てくださったみなさん本当にありがとうございました！やっぱり、地元多治見での出店はみ…
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="p-news__card">
+              <a href="" class="p-news-card">
+                <div class="p-news-card__img">
+                  <img
+                    src="./assets/img/news_2.jpg"
+                    alt="カラフルなプラスチックの破片をレジンで固めたパーツ"
+                    width="690"
+                    height="426"
+                  />
+                </div>
+                <div class="p-news-card__body">
+                  <time datetime="2020-02-04">2020年1月20日</time>
+                  <h3 class="p-news-card__title">
+                    “可愛い” で 地球を守る！ 海洋マイクロプラスチックを使ったハンドメイドアクセサリー屋さん 【sobolon】
+                  </h3>
+                  <p class="p-news-card__text">
+                    こんにちは！私は、「 “可愛い”
+                    で地球を守る！」をテーマに、昨今、環境問題として話題になっている、マイクロプラスチックを使ったアクセサリー…
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="p-news__card">
+              <a href="" class="p-news-card">
+                <div class="p-news-card__img">
+                  <img src="./assets/img/news_3.jpg" alt="女性が白い布をまとい微笑んでいます" width="520" height="320" />
+                </div>
+                <div class="p-news-card__body">
+                  <time datetime="2020-02-04" class="p-news-card__time">2020年1月20日</time>
+                  <h3 class="p-news-card__title">sobolonの矛盾</h3>
+                  <p class="p-news-card__text">
+                    こんにちは！“可愛い”で 地球を守る！マイクロプラスチックアクセサリー【 sobolon
+                    】のリーダーひなこです！sobolonを知らない…
+                  </p>
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="p-news__button">
+            <a href="" class="c-button">MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- concept2 -->
+      <div class="p-concept2">
+        <div class="p-concept2__inner l-inner">
+          <div class="p-concept2__contents">
+            <div class="p-concept2__img">
+              <img
+                src="./assets/img/concept_2.jpg"
+                alt="白いワンピースを着た女性が森の中で微笑んでいます"
+                width="1200"
+                height="800"
+              />
+            </div>
+            <div class="p-concept2__body">
+              <p class="p-concept2__title">
+                合言葉は、<br />
+                「 “可愛い” で 地球を守る！」
+              </p>
+              <p class="p-concept2__Text">
+                深刻化している環境問題に対して、否定や制限、禁止といった強制的な方法ではなく、明るく幸せな未来を目指して、「可愛い」「楽しい」の力を信じて、愛につながる選択を世の中に増やしていきます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact -->
+      <section id="contact" class="p-contact">
+        <div class="p-contact__inner l-inner">
+          <h2 class="p-contact__heading c-cection-heading">Contact</h2>
+          <form id="contact-form" action="" class="p-form c-section-contents">
+            <p class="p-form__text"><span class="p-form__required-color">＊</span>は入力必須項目です</p>
+            <div class="p-form__fields">
+              <div class="p-form__field">
+                <div class="p-form__field-head">
+                  <label for="your-name" class="p-form__field-label">お名前<span class="p-form__required-color">＊</span></label>
+                </div>
+                <div class="p-form__field-input">
+                  <input required type="text" name="your-name" id="your-name" class="p-form__field-text-input" />
+                </div>
+              </div>
+              <div class="p-form__field">
+                <div class="p-form__field-head">
+                  <label for="your-email" class="p-form__field-label"
+                    >メールアドレス<span class="p-form__required-color">＊</span></label
+                  >
+                </div>
+                <div class="p-form__field-input">
+                  <input required type="email" name="your-email" id="your-email" class="p-form__field-text-input" />
+                </div>
+              </div>
+              <div class="p-form__field">
+                <div class="p-form__field-head">
+                  <span class="p-form__field-label">法人/個人の選択<span class="p-form__required-color">＊</span></span>
+                </div>
+                <div class="p-form__field-radios">
+                  <label class="p-form__field-radio">
+                    <input required type="radio" name="your-type" class="p-form__field-radio-input" checked />
+                    <span class="p-form__radio-text">法人</span>
+                  </label>
+                  <label class="p-form__field-radio">
+                    <input required type="radio" name="your-type" class="p-form__field-radio-input" />
+                    <span class="p-form__radio-text">個人</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-form__field">
+                <div class="p-form__field-head">
+                  <label for="your-message" class="p-form__field-label"
+                    >お問い合わせ内容<span class="p-form__required-color">＊</span></label
+                  >
+                </div>
+                <div class="p-form__field-input">
+                  <textarea
+                    name="your-message"
+                    id="your-message"
+                    cols="30"
+                    rows="10"
+                    class="p-form__field-textarea-input"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="p-form__privacy">
+              <label class="p-form__checkbox">
+                <input required type="checkbox" name="your-privacy" class="p-form__checkbox-input" />
+                <span class="p-form__checkbox-text"><a href="" target="_blank">プライバシーポリシー</a>に同意します。</span>
+              </label>
+            </div>
+            <div class="p-form__submit-button">
+              <button type="submit" class="c-button">送信</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+      <div class="l-footer__inner l-inner">
+        <div class="l-footer__logo">
+          <a href="#"><img src="./assets/img/logo.svg" alt="sobolon" width="120" height="22" /></a>
+        </div>
+        <ul class="l-footer__menu">
+          <li class="l-footer__menu-item"><a href="">プライバシーポリシー</a></li>
+          <li class="l-footer__menu-item"><a href="">特定商取引法に基づく表記</a></li>
+        </ul>
+        <ul class="l-footer__sns">
+          <li class="l-footer__sns-item">
+            <a href=""><img src="./assets/img/sns_twitter.svg" alt="Twitter" width="21" height="18" /></a>
+          </li>
+          <li class="l-footer__sns-item">
+            <a href=""><img src="./assets/img/sns_instaglam.svg" alt="Isntaglam" width="18" height="21" /></a>
+          </li>
+          <li class="l-footer__sns-item">
+            <a href=""><img src="./assets/img/sns_line.svg" alt="LINE" width="18" height="20" /></a>
+          </li>
+        </ul>
+        <p class="l-footer__copyright">
+          <small>&copy;&nbsp;2020&nbsp;sobolon&nbsp;All&nbsp;rights&nbsp;reserved</small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
